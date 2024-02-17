@@ -1,2 +1,5 @@
 <input type="text" [(ngModel)]="name"/>
 <p>Hello, {{ name }}!</p>
+<productlist></productlist>
+<input type="text" [(ngModel)]="inputValue">
+<button *ngIf="inputValue.trim() !== ''" (click)="buttonClicked()">Kliko</button>
